@@ -1,0 +1,11 @@
+---
+apiVersion: v2
+name: apt-cacher-ng
+version: 0.1.6
+description: >-
+  Apt-Cacher NG is a caching proxy for software packages which are downloaded by Unix/Linux system distribution mechanisms from mirror servers accessible via HTTP.
+type: application
+maintainers:
+  - name: wrboyce
+    email: wrboyce@users.noreply.github.com
+appVersion: "3.3-20200524"

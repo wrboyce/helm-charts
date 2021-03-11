@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "apt-cacher-ng.fullname" . }}
+  labels:
+    {{- include "apt-cacher-ng.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.port }}
+      protocol: TCP
+      name: apt-cacher
+  selector:
+    {{- include "apt-cacher-ng.selectorLabels" . | nindent 4 }}
