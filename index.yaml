@@ -1,3 +1,19 @@
----
 apiVersion: v1
-entries: {}
+entries:
+  apt-cacher-ng:
+  - apiVersion: v2
+    appVersion: 3.3-20200524
+    created: "2021-03-11T18:56:19.586705864Z"
+    description: Apt-Cacher NG is a caching proxy for software packages which are
+      downloaded by Unix/Linux system distribution mechanisms from mirror servers
+      accessible via HTTP.
+    digest: 5b13363537b17961baf233461858e7a1cd6bb1b235fc149188e3aead2760c2d5
+    maintainers:
+    - email: wrboyce@users.noreply.github.com
+      name: wrboyce
+    name: apt-cacher-ng
+    type: application
+    urls:
+    - https://github.com/wrboyce/helm-charts/releases/download/apt-cacher-ng-0.1.6/apt-cacher-ng-0.1.6.tgz
+    version: 0.1.6
+generated: "2021-03-11T18:56:19.586710464Z"
